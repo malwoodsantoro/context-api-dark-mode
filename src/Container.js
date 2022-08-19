@@ -9,26 +9,34 @@ function Container() {
     <div className='container'>
       <div className={darkMode ? `dark-mode` : `light-mode`}>
         <Toggle />
-        <h1 className={'heading'}>Light and dark mode</h1>
-        <p className={'paragraph'}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Sed tempus urna et pharetra pharetra massa massa ultricies. Id porta nibh venenatis cras sed felis
-          eget velit. A diam sollicitudin tempor id eu. Tincidunt arcu non sodales neque sodales ut etiam sit. Eu
-          scelerisque felis imperdiet proin fermentum. Faucibus a pellentesque sit amet porttitor. Laoreet id donec
-          ultrices tincidunt arcu non sodales neque. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi
-          cras. Sollicitudin tempor id eu nisl nunc. Eget velit aliquet sagittis id consectetur purus ut. Cras pulvinar
-          mattis nunc sed blandit libero volutpat. Amet consectetur adipiscing elit pellentesque habitant morbi tristique
-          senectus et. Sed ullamcorper morbi tincidunt ornare massa. Et egestas quis ipsum suspendisse ultrices gravida
-          dictum fusce. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Diam sollicitudin tempor id eu.
-          Sed pulvinar proin gravida hendrerit lectus. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae.
-          Eget nunc lobortis mattis aliquam faucibus purus. Mi sit amet mauris commodo quis imperdiet massa tincidunt.
-          Eget gravida cum sociis natoque penatibus et magnis dis. In massa tempor nec feugiat nisl pretium fusce. Nulla
-          at volutpat diam ut venenatis tellus in metus vulputate. Purus gravida quis blandit turpis cursus in. Nulla
-          porttitor massa id neque aliquam. Metus aliquam eleifend mi in nulla posuere. Consequat id porta nibh venenatis
-          cras sed. A lacus vestibulum sed arcu non. Lacus viverra vitae congue eu consequat ac felis donec et. Vitae et
-          leo duis ut. Consequat interdum varius sit amet mattis vulputate enim nulla. Faucibus scelerisque eleifend donec
-          pretium vulputate sapien nec.
-        </p>
+        <div className='text'>
+          <h1 className={'heading'}>I Want to Write Something So Simply</h1>
+          <h3>by Mary Oliver</h3> 
+          <p className={'paragraph'}>
+            I want to write something<br/>
+            so simply<br/>
+            about love<br/>
+            or about pain<br/>
+            that even<br/>
+            as you are reading<br/>
+            you feel it<br/>
+            and as you read<br/>
+            you keep feeling it<br/>
+            and though it be my story<br/>
+            it will be common,<br/>
+            though it be singular<br/>
+            it will be known to you<br/>
+            so that by the end<br/>
+            you will think—<br/>
+            no, you will realize—<br/>
+            that it was all the while<br/>
+            yourself arranging the words,<br/>
+            that it was all the time<br/>
+            words that you yourself,<br/>
+            out of your heart<br/>
+            had been saying.<br/>
+          </p>
+        </div>
       </div>
     </div>
   )

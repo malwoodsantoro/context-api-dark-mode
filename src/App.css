@@ -1,9 +1,8 @@
 .container {
-  width: 100%;
-  height: 100%;
+  padding: 40px;
 }
 
-.dark-mode{
+.dark-mode {
   background-color: rgb(42, 42, 42);
   color: #fff;
 }
@@ -12,18 +11,22 @@
   background-color: #fff;
 }
 
+.text {
+  padding: 40px;
+}
+
 .toggle {
+  padding-top: 50px;
   width: 4rem;
   height: 2rem;
   position: relative;
   outline: none !important;
   border-radius: 10px;
-  border-width: 1px;
+  border-width: 0px;
   border-style: solid;
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: none;
-  padding: 0; 
 }

@@ -1,14 +1,15 @@
-import React, {useContext} from 'react';
-import {DarkModeContext} from './context/DarkModeContext';
+import React, { useContext } from 'react';
+import { DarkModeContext } from './context/DarkModeContext';
 import Toggle from './Toggle'
 
 function Container() {
-    const {darkMode} = useContext(DarkModeContext);
+  const { darkMode } = useContext(DarkModeContext);
 
-    return (
+  return (
+    <div className='container'>
       <div className={darkMode ? `dark-mode` : `light-mode`}>
         <Toggle />
-        <h1 className={'heading'}>Dark Mode</h1>
+        <h1 className={'heading'}>Light and dark mode</h1>
         <p className={'paragraph'}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Sed tempus urna et pharetra pharetra massa massa ultricies. Id porta nibh venenatis cras sed felis
@@ -29,7 +30,8 @@ function Container() {
           pretium vulputate sapien nec.
         </p>
       </div>
-    )
+    </div>
+  )
 }
 
 export default Container

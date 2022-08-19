@@ -1,22 +1,24 @@
 
-import React, {useContext} from 'react';
-import {DarkModeContext} from './context/DarkModeContext';
-import { IoMdMoon as Moon, IoMdSunny as Sun } from 'react-icons/io';
+import React, { useContext } from 'react';
+import { DarkModeContext } from './context/DarkModeContext';
+import sun from './sun.svg';
+import moon from './moon.svg';
 
 const Toggle = () => {
-    const {darkMode, toggleDarkMode} = useContext(DarkModeContext);
-    const handleClick = () => {
-        toggleDarkMode();
-    }
-    return (
-      <button 
+  const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
+  const handleClick = () => {
+    toggleDarkMode();
+  }
+  return (
+    <button
       className='toggle'
       onClick={handleClick}
     >
-      <Sun className={`icon ${!darkMode ? 'active' : ''}`}/>
-      <Moon className={`icon ${darkMode ? 'active' : ''}`}/>
+      {darkMode ? <img src={sun} alt="sketch of a sun"></img>
+        : <img src={moon} alt="sketch of a moon"></img>
+      }
     </button>
-    );
+  );
 }
 
 export default Toggle
